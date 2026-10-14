@@ -1,6 +1,5 @@
-# Privacy Policy (draft)
+# Privacy Policy
 **Patchsmith** · patchsmith.co · Last updated: 2026-10-12
-Status: draft for Bilal review. Not live until approved and published.
 
 ## Who we are
 Patchsmith ("we", "us") makes and supplies custom patches. Contact: [TBC]. Postal address: [TBC].
@@ -23,7 +22,7 @@ We do not buy or sell personal data lists.
 Contract (quotes and orders), legitimate interests (site security, B2B follow-up where allowed), consent (marketing and non-essential cookies), and legal obligation.
 
 ## Sharing
-We share data only with providers who help us run the business (hosting, email, payment, shipping, production workshop), under contracts that limit their use. We do not sell your data. Artwork is never reused for other clients or as portfolio without your written OK.
+We share data only with providers who help us run the business (hosting, email, payment, shipping, production workshop), under contracts that limit their use. We do not sell your data.
 
 ## Retention
 Quote enquiries: up to 24 months if no order. Orders and invoices: as required by law (typically 5–7 years). Marketing: until you unsubscribe. Artwork for completed orders: kept for easier reorders until you ask us to delete it.

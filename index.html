@@ -17,11 +17,10 @@
   <link rel="icon" href="assets/favicon/favicon-32.png" type="image/png" sizes="32x32">
   <link rel="icon" href="assets/favicon/favicon-16.png" type="image/png" sizes="16x16">
   <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon-180.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="assets/fonts/archivo-black-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/work-sans-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
-  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Work+Sans:ital,wght@0,400;0,500;0,600;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script>
     document.documentElement.classList.add("js");
@@ -36,7 +35,7 @@
   <header class="site-header is-dark" id="site-header">
     <div class="header__inner">
       <a class="brand" href="#top">
-        <img id="brand-logo" src="assets/brand/logo-primary-dark.svg" alt="Patchsmith" width="600" height="300">
+        <img id="brand-logo" src="assets/brand/logo-primary-dark.svg" alt="Patchsmith" width="600" height="300" decoding="async" fetchpriority="high">
       </a>
       <nav class="desk-nav" aria-label="Primary">
         <a href="#types">Patch types</a>
@@ -206,6 +205,12 @@
           </div>
         </article>
       </div>
+      <ul class="sr-only" id="fan-alt">
+        <li>Embroidered. The classic. Raised, textured thread for logos that want to be felt. Best for caps, jackets, uniforms.</li>
+        <li>Woven. Thinner thread, sharper detail. If your logo has small text or fine lines, this is your patch.</li>
+        <li>PVC. Soft rubber, fully waterproof, practically indestructible. Made for outdoor gear, tactical kit and bags.</li>
+        <li>Chenille. Fuzzy, bold, unmistakably varsity. Letterman jackets, school spirit, retro merch.</li>
+      </ul>
       <div class="wrap types__meta">
         <p><strong>Backings</strong> iron-on · sew-on · hook-and-loop (Velcro) · adhesive · pin</p>
         <p><strong>Borders</strong> merrowed · hot-cut · laser-cut</p>
@@ -217,7 +222,7 @@
       <div class="why__grid wrap-wide">
         <div class="why__copy">
           <p class="kicker">Why Patchsmith</p>
-          <h2>Five things, before a single <em>stitch.</em></h2>
+          <h2>Four things, before a single <em>stitch.</em></h2>
           <p>Pick a finish, see a mockup, and approve it. Then we make the patch.</p>
         </div>
         <div class="why__stage">
@@ -241,12 +246,6 @@
             <article class="glass-card">
               <span>04</span>
               <h3>Ships worldwide by tracked express courier</h3>
-              <p>US, UK, Europe, the Middle East and Africa. Anywhere else, just ask.</p>
-            </article>
-            <article class="glass-card">
-              <span>05</span>
-              <h3>Your artwork is used only to make your order</h3>
-              <p>We don't reuse it, and we don't share it.</p>
             </article>
           </div>
         </div>
@@ -303,7 +302,7 @@
           <p class="kicker">Gallery</p>
           <h2>Thread, meet <em>results.</em></h2>
         </div>
-        <p class="lede">Concept designs for shape and finish. Not client work. Real production photos will replace these.</p>
+        <p class="lede">Concept designs for shape and finish. Not client work.</p>
       </div>
       <div class="wrap filters" role="toolbar" aria-label="Filter concepts">
         <button type="button" class="is-on" data-filter="all" aria-pressed="true">All</button>
@@ -408,7 +407,7 @@
           </details>
           <details>
             <summary>Do you ship to my country?</summary>
-            <div class="faq__a"><p>Ships worldwide by tracked express courier. We ship to the US, UK, Europe, the Middle East and Africa. Anywhere else, just ask.</p></div>
+            <div class="faq__a"><p>Ships worldwide by tracked express courier.</p></div>
           </details>
           <details>
             <summary>What file should I send?</summary>
@@ -424,7 +423,7 @@
           </details>
           <details>
             <summary>Can you match my brand colours?</summary>
-            <div class="faq__a"><p>Send Pantone codes and we'll match them as closely as the material allows.</p></div>
+            <div class="faq__a"><p>Send your Pantone references and we'll match thread colours as closely as the material allows.</p></div>
           </details>
           <details>
             <summary>How do I pay?</summary>
@@ -433,10 +432,6 @@
           <details>
             <summary>Do you do samples?</summary>
             <div class="faq__a"><p>Ask when you request the quote and we'll tell you what's possible for that patch.</p></div>
-          </details>
-          <details>
-            <summary>Who sees my artwork?</summary>
-            <div class="faq__a"><p>Your artwork is used only to make your order. We don't reuse it, and we don't share it.</p></div>
           </details>
         </div>
       </div>
@@ -455,7 +450,7 @@
             <li>Price tiers: TBC</li>
             <li>Bulk discounts: TBC</li>
           </ul>
-          <p class="quote__aside">Talk directly to our production team on WhatsApp. The button is ready; the number is still to be connected.</p>
+          <p class="quote__aside">Talk directly to our production team on WhatsApp.</p>
         </div>
         <form class="glass-form" id="quote-form" novalidate>
           <div class="fields">
@@ -495,7 +490,7 @@
               <span class="file-name" data-file-name>Vector or a clear PNG / JPG</span>
             </label>
             <label class="span-2">Notes
-              <textarea name="notes" rows="4" placeholder="Backing, colours, Pantone codes, what it's going on."></textarea>
+              <textarea name="notes" rows="4" placeholder="Backing, colours, Pantone references, what it's going on."></textarea>
             </label>
           </div>
           <button class="btn btn-forest" type="submit">Get my quote</button>
@@ -514,7 +509,7 @@
     </div>
     <div class="footer-sheet" data-header="light">
       <div class="footer-card">
-        <img src="assets/brand/logo-tagline-light.svg" alt="Patchsmith" width="660" height="380">
+        <img src="assets/brand/logo-tagline-light.svg" alt="Patchsmith" width="660" height="380" decoding="async" loading="lazy">
         <nav aria-label="Footer">
           <a href="#types">Patch types</a>
           <a href="#process">How it works</a>
@@ -540,9 +535,9 @@
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 14l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
   </button>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
-  <script src="main.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script defer src="main.js"></script>
 </body>
 </html>

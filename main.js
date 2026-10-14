@@ -63,6 +63,25 @@
   updateTheme();
   window.addEventListener("scroll", updateTheme, { passive: true });
 
+  var fanQuery = window.matchMedia("(min-width: 900px)");
+  function syncFanAccess() {
+    var stacked = fanQuery.matches;
+    var cards = document.querySelectorAll(".fan-card");
+    cards.forEach(function (card, i) {
+      var hide = stacked && i < cards.length - 1;
+      if (hide) card.setAttribute("aria-hidden", "true");
+      else card.removeAttribute("aria-hidden");
+      if ("inert" in card) card.inert = hide;
+    });
+    var alt = document.getElementById("fan-alt");
+    if (alt) {
+      if (stacked) alt.removeAttribute("aria-hidden");
+      else alt.setAttribute("aria-hidden", "true");
+    }
+  }
+  syncFanAccess();
+  if (fanQuery.addEventListener) fanQuery.addEventListener("change", syncFanAccess);
+
   function closeMenu() {
     if (!mobileNav || !toggle) return;
     mobileNav.hidden = true;
@@ -150,11 +169,11 @@
       });
       if (!ok) {
         status.className = "form-status is-on";
-        status.textContent = "Add your name and a real email so we know who the brief belongs to. Nothing is sent from this page.";
+        status.textContent = "Add your name and a real email so we know who the brief belongs to. Nothing was sent.";
         return;
       }
       status.className = "form-status is-on";
-      status.textContent = "Nothing was sent. This form is not connected yet, so your brief stayed in the browser. Keep a copy of what you typed.";
+      status.textContent = "Nothing was sent. Keep a copy of what you typed.";
     });
   }
 
@@ -238,12 +257,10 @@
       var cards = gsap.utils.toArray(".fan-card");
       gsap.fromTo(cards, {
         y: 120,
-        rotation: 0,
-        opacity: 0.35
+        rotation: 0
       }, {
         y: function (i) { return [22, 8, 0, 8, 22][i] || 0; },
         rotation: function (i) { return parseFloat(cards[i].getAttribute("data-rot")) || 0; },
-        opacity: 1,
         stagger: 0.05,
         ease: "power2.out",
         transformOrigin: "50% 120%",
