@@ -37,4 +37,4 @@ Do not upload illegal, infringing, or harmful content. We may refuse or cancel o
 [Bilal to confirm - draft suggestion: laws of the United Arab Emirates, courts of Dubai, without limiting mandatory consumer rights where they apply.]
 
 ## Contact
-hello@patchsmith.co · Postal: [TBC]
+Contact: [TBC] · Postal: [TBC]

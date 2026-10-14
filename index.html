@@ -1,52 +1,552 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
-<title>Custom Patches for Brands & Teams | Patchsmith</title>
-<meta name="description" content="Custom embroidered, woven, PVC, chenille and leather patches for apparel brands, uniforms, clubs and events. Made in Pakistan, shipped worldwide. Get a quote.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css"></head><body>
-<header class="nav"><div class="container nav__inner">
-<a href="#top" class="nav__brand"><img src="assets/logo.png" alt="Patchsmith logo" class="nav__logo"><span class="nav__name">Patchsmith</span></a>
-<nav class="nav__links"><a href="#types">Patch types</a><a href="#process">How it works</a><a href="#gallery">Gallery</a><a href="#faq">FAQ</a><a href="#quote" class="btn btn--small">Get a quote</a></nav>
-<button class="nav__toggle" aria-label="Menu" aria-expanded="false">☰</button></div></header>
-<main id="top">
-<section class="hero"><div class="container hero__grid">
-<div class="hero__text"><p class="eyebrow">Custom patches · Made in Pakistan · Shipped worldwide</p>
-<h1 class="hero__title">Your logo,<br><span class="stitch-underline">stitched</span> to last.</h1>
-<p class="hero__sub">Embroidered, woven, PVC, chenille and leather patches for apparel brands, uniform suppliers, clubs, schools and events. Message the people who actually make them.</p>
-<div class="hero__ctas"><a href="#quote" class="btn">Get a free quote</a><a href="#" class="btn btn--ghost js-wa">Chat on WhatsApp</a></div></div>
-<div class="hero__art" aria-hidden="true"><div class="patch patch--hero"><span>PATCH<b>SMITH</b></span></div><svg class="thread" viewBox="0 0 400 200"><path d="M10 180 C120 20 260 220 390 30" /></svg></div>
-</div></section>
-<section class="marquee" aria-hidden="true"><div class="marquee__track">EMBROIDERED ✦ WOVEN ✦ PVC ✦ CHENILLE ✦ LEATHER ✦ US ✦ UK ✦ EUROPE ✦ MIDDLE EAST ✦ AFRICA ✦ EMBROIDERED ✦ WOVEN ✦ PVC ✦ CHENILLE ✦ LEATHER ✦ US ✦ UK ✦ EUROPE ✦ MIDDLE EAST ✦ AFRICA ✦</div></section>
-<section class="section why"><div class="container"><h2 class="section__title">Why brands come to the workshop</h2><div class="cards">
-<article class="card reveal"><h3>Talk to the maker</h3><p>WhatsApp goes straight to production. No chatbot maze, no middleman markup.</p></article>
-<article class="card reveal"><h3>Mockup first</h3><p>Every quote comes with a digital mockup. Nothing gets stitched until you say yes.</p></article>
-<article class="card reveal"><h3>Built for reorders</h3><p>We keep your artwork on file, so a reorder takes one message. Planning a drop or a season? We'll work to your calendar.</p></article>
-<article class="card reveal"><h3>Worldwide, properly</h3><p>Shipping to the US, UK, Europe, the Middle East and Africa. Ask us for duty options on your quote.</p></article></div></div></section>
-<section class="section types" id="types"><div class="container"><h2 class="section__title">Pick your patch.</h2><p class="section__lead">Tap a type to see where it shines.</p>
-<div class="selector"><div class="selector__tabs" role="tablist"></div><div class="selector__panel"><div class="selector__swatch patch"></div><div class="selector__info"><h3 class="selector__name"></h3><p class="selector__desc"></p><ul class="selector__meters"></ul><p class="selector__best"></p></div></div></div>
-<p class="types__extras"><b>Backings:</b> iron-on · sew-on · hook-and-loop · adhesive · pin &nbsp; <b>Borders:</b> merrowed · hot-cut · laser-cut</p></div></section>
-<section class="section process" id="process"><div class="container"><h2 class="section__title">Four steps. No guesswork.</h2><ol class="steps">
-<li class="step reveal"><span class="step__num">01</span><h3>Send your design</h3><p>A logo, a sketch, even a napkin doodle. Add size and quantity if you know them.</p></li>
-<li class="step reveal"><span class="step__num">02</span><h3>Mockup + quote</h3><p>A digital mockup and a real price before anything is stitched.</p></li>
-<li class="step reveal"><span class="step__num">03</span><h3>Approve</h3><p>Changes until you're happy, then we lock the order.</p></li>
-<li class="step reveal"><span class="step__num">04</span><h3>Stitch + ship</h3><p>We stitch, pack, and send tracking on every order.</p></li></ol></div></section>
-<section class="section gallery" id="gallery"><div class="container"><h2 class="section__title">Thread, meet results.</h2><p class="section__lead">Concept placeholders. Real production photos go here.</p><div class="gallery__grid">
-<figure class="gallery__item">Concept · Embroidered</figure><figure class="gallery__item">Concept · Woven</figure><figure class="gallery__item">Concept · PVC</figure><figure class="gallery__item">Concept · Chenille</figure><figure class="gallery__item">Concept · Leather</figure><figure class="gallery__item">Concept · Your logo?</figure></div></div></section>
-<section class="section quote" id="quote"><div class="container quote__grid"><div><h2 class="section__title">Fair prices. Quoted fast.</h2>
-<p>Your price depends on size, patch type, colours, backing and quantity. Send us the details and you'll get a real number, not a riddle.</p>
-</div>
-<form class="form" novalidate><div class="form__row"><label>Name<input name="name" required></label><label>Company<input name="company"></label></div>
-<div class="form__row"><label>Email<input type="email" name="email" required></label><label>Country<input name="country"></label></div>
-<div class="form__row"><label>Patch type<select name="type"><option>Embroidered</option><option>Woven</option><option>PVC</option><option>Chenille</option><option>Leather</option><option>Not sure</option></select></label><label>Quantity<input type="number" name="qty" min="1"></label></div>
-<div class="form__row"><label>Size (in/cm)<input name="size"></label><label>Deadline<input type="date" name="deadline"></label></div>
-<label>Artwork<input type="file" name="art"></label><label>Notes<textarea name="notes" rows="3"></textarea></label>
-<button class="btn" type="submit">Get my quote</button><p class="form__msg" aria-live="polite"></p></form></div></section>
-<section class="section faq" id="faq"><div class="container"><h2 class="section__title">Questions, answered.</h2>
-<details><summary>Do you ship to my country?</summary><p>US, UK, Europe, the Middle East and Africa. For anywhere else, just ask.</p></details>
-<details><summary>What file should I send?</summary><p>Vector (AI, EPS, PDF, SVG) is ideal. A clear PNG or JPG works too.</p></details>
-<details><summary>Can you match my brand colours?</summary><p>Yes. Send Pantone codes if you have them.</p></details>
-</div></section>
-<section class="cta-band"><div class="container"><h2>Got a logo? We've got thread.</h2><a href="#quote" class="btn btn--light">Start a quote</a></div></section>
-</main>
-<footer class="footer" id="contact"><div class="container footer__inner"><p><b>Patchsmith</b> · Custom patches, made in Pakistan, shipped worldwide.</p><p>hello@patchsmith.co</p><p>© 2026 Patchsmith · Privacy · Terms</p></div></footer>
-<a href="#" class="wa-float js-wa" aria-label="Chat on WhatsApp">WhatsApp</a>
-<script src="main.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Custom Patches for Brands &amp; Teams | Patchsmith</title>
+  <meta name="description" content="Custom embroidered, woven, PVC, chenille and leather patches for apparel brands, uniforms, clubs and events. Made in Pakistan, shipped worldwide. Get a quote.">
+  <meta name="theme-color" content="#050505">
+  <meta property="og:title" content="Custom Patches for Brands &amp; Teams | Patchsmith">
+  <meta property="og:description" content="Custom embroidered, woven, PVC, chenille and leather patches for apparel brands, uniforms, clubs and events. Made in Pakistan, shipped worldwide. Get a quote.">
+  <meta property="og:image" content="assets/logo.png">
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Instrument+Serif:ital@1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    document.documentElement.classList.add("js");
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      document.documentElement.classList.add("reduce");
+    }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header is-dark" id="site-header">
+    <div class="header__inner">
+      <a class="brand" href="#top">
+        <img src="assets/logo.png" alt="Patchsmith" width="800" height="800">
+      </a>
+      <nav class="desk-nav" aria-label="Primary">
+        <a href="#types">Patch types</a>
+        <a href="#process">How it works</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-metal btn-sm" href="#quote">Get a quote</a>
+      </nav>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobile-nav" hidden>
+    <nav aria-label="Mobile">
+      <a href="#types">Patch types</a>
+      <a href="#process">How it works</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#faq">FAQ</a>
+      <a href="#quote">Get a quote</a>
+      <a href="#types">Help me pick a patch</a>
+    </nav>
+  </div>
+
+  <main id="main">
+    <section class="hero" id="top" data-header="dark">
+      <canvas class="hero__canvas" id="hero-canvas" aria-hidden="true"></canvas>
+      <div class="hero__fallback" aria-hidden="true">
+        <svg viewBox="0 0 360 220" class="fallback-patch">
+          <rect x="28" y="48" width="300" height="140" rx="36" fill="#F7F7F2"/>
+          <rect x="40" y="60" width="276" height="116" rx="28" fill="#2E4B3C"/>
+          <rect x="54" y="74" width="248" height="88" rx="20" fill="none" stroke="#F7F7F2" stroke-width="2" stroke-dasharray="5 7"/>
+          <text x="178" y="128" text-anchor="middle" font-family="Archivo Black, sans-serif" font-size="34" letter-spacing="-1">
+            <tspan fill="#F7F7F2">PATCH</tspan><tspan fill="#E07A2E">SMITH</tspan>
+          </text>
+          <line x1="250" y1="58" x2="318" y2="18" stroke="#E07A2E" stroke-width="6" stroke-linecap="round"/>
+          <circle cx="322" cy="15" r="6" fill="#E07A2E"/>
+          <circle cx="322" cy="15" r="2.2" fill="#F7F7F2"/>
+        </svg>
+      </div>
+      <div class="hero__content">
+        <p class="kicker">Custom patches · Made in Pakistan</p>
+        <h1>Five patch types.<br>One <em>honest</em><br>recommendation.</h1>
+        <p class="hero__sub">Embroidered, woven, PVC, chenille or leather. Send your logo and what it's going on; we'll recommend the right finish and mockup it first.</p>
+        <div class="hero__cta">
+          <a class="btn btn-metal" href="#quote">Get a quote</a>
+          <a class="btn btn-ink" href="#types">Help me pick a patch</a>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#assemble">
+        <span>Scroll</span>
+        <i></i>
+      </a>
+    </section>
+
+    <div class="marquee" data-header="dark" aria-hidden="true">
+      <div class="marquee__track">
+        <p>Embroidered · Woven · PVC · Chenille · Leather · Iron-on · Sew-on · Hook-and-loop · Adhesive · Pin · Merrowed · Hot-cut · Laser-cut ·&nbsp;</p>
+        <p>Embroidered · Woven · PVC · Chenille · Leather · Iron-on · Sew-on · Hook-and-loop · Adhesive · Pin · Merrowed · Hot-cut · Laser-cut ·&nbsp;</p>
+      </div>
+    </div>
+
+    <section class="assemble" id="assemble" data-header="dark">
+      <div class="assemble__inner">
+        <p class="kicker">The line we stitch by</p>
+        <h2 class="assemble__title">
+          <span class="assemble__row" data-split>GOT A LOGO?</span>
+          <span class="assemble__row" data-split>WE'VE GOT THREAD.</span>
+        </h2>
+        <svg class="doodle" viewBox="0 0 1100 360" aria-hidden="true">
+          <path d="M40 78 C 160 20, 240 140, 390 70 S 620 10, 780 96 S 980 150, 1060 48"/>
+          <path d="M30 230 C 190 180, 300 300, 500 214 S 760 150, 1040 250"/>
+          <path d="M180 300 C 280 270, 360 330, 520 292 S 760 250, 900 310"/>
+        </svg>
+        <p class="assemble__note">Five finishes. One workshop in Pakistan. Ships worldwide by tracked express courier.</p>
+      </div>
+    </section>
+
+    <section class="audience" id="who" data-header="light">
+      <div class="wrap audience__grid">
+        <div>
+          <p class="kicker">Who we make for</p>
+          <h2>Brands, teams and the people who wear the <em>mark.</em></h2>
+        </div>
+        <ul class="audience__list">
+          <li><span>01</span> Apparel and streetwear brands</li>
+          <li><span>02</span> Uniform suppliers</li>
+          <li><span>03</span> Sports clubs and teams</li>
+          <li><span>04</span> Schools and universities</li>
+          <li><span>05</span> Events and conferences</li>
+          <li><span>06</span> Merch and promo companies</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="types" id="types" data-header="light">
+      <div class="wrap types__head">
+        <p class="kicker">Five finishes</p>
+        <h2>Pick your <em>patch.</em></h2>
+        <p class="lede">We'll handle the rest. Not sure which finish fits? Send the artwork and what it's going on. We'll tell you.</p>
+      </div>
+      <div class="fan" id="fan">
+        <article class="fan-card" data-rot="-13" style="--rot:-13deg; --z:1">
+          <div class="fan-card__inner fan-card__inner--thread">
+            <div class="sticker-art" aria-hidden="true">
+              <svg viewBox="0 0 200 150">
+                <rect x="16" y="22" width="168" height="108" rx="26" fill="#fff"/>
+                <rect x="28" y="34" width="144" height="84" rx="18" fill="#2E4B3C"/>
+                <rect x="38" y="44" width="124" height="64" rx="12" fill="none" stroke="#F7F7F2" stroke-width="2" stroke-dasharray="4 5"/>
+                <path d="M70 78c14-18 28-18 30 0M100 78c14-18 28-18 30 0" fill="none" stroke="#E07A2E" stroke-width="4" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Embroidered</h3>
+            <p>The classic. Raised, textured thread for logos that want to be felt. Best for caps, jackets, uniforms.</p>
+          </div>
+        </article>
+        <article class="fan-card" data-rot="-6" style="--rot:-6deg; --z:2">
+          <div class="fan-card__inner fan-card__inner--woven">
+            <div class="sticker-art" aria-hidden="true">
+              <svg viewBox="0 0 200 150">
+                <rect x="14" y="36" width="172" height="78" rx="8" fill="#fff"/>
+                <rect x="24" y="46" width="152" height="58" rx="4" fill="#D9E0E4"/>
+                <path d="M28 58h144M28 70h144M28 82h144M28 94h144" stroke="#2E4B3C" stroke-width="1" opacity=".45"/>
+                <path d="M70 52v48M100 52v48M130 52v48" stroke="#2E4B3C" stroke-width="1" opacity=".35"/>
+                <rect x="86" y="66" width="28" height="18" fill="none" stroke="#E07A2E" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>Woven</h3>
+            <p>Thinner thread, sharper detail. If your logo has small text or fine lines, this is your patch.</p>
+          </div>
+        </article>
+        <article class="fan-card" data-rot="0" style="--rot:0deg; --z:3">
+          <div class="fan-card__inner fan-card__inner--pvc">
+            <div class="sticker-art" aria-hidden="true">
+              <svg viewBox="0 0 200 150">
+                <path d="M100 16l62 22v40c0 32-24 52-62 64-38-12-62-32-62-64V38z" fill="#fff"/>
+                <path d="M100 30l48 16v32c0 24-18 40-48 50-30-10-48-26-48-50V46z" fill="#1C1C1C"/>
+                <path d="M100 30l48 16v10l-48 18-48-18v-10z" fill="#3a3a3a"/>
+                <path d="M78 78h44M100 64v28" stroke="#E07A2E" stroke-width="4" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>PVC</h3>
+            <p>Soft rubber, fully waterproof, practically indestructible. Made for outdoor gear, tactical kit and bags.</p>
+          </div>
+        </article>
+        <article class="fan-card" data-rot="6" style="--rot:6deg; --z:4">
+          <div class="fan-card__inner fan-card__inner--chenille">
+            <div class="sticker-art" aria-hidden="true">
+              <svg viewBox="0 0 200 150">
+                <circle cx="100" cy="76" r="58" fill="#fff"/>
+                <circle cx="100" cy="76" r="46" fill="#F2C14E"/>
+                <circle cx="100" cy="76" r="34" fill="none" stroke="#2E4B3C" stroke-width="8" stroke-dasharray="3 4"/>
+                <path d="M86 96V58h16c12 0 18 7 18 16s-7 15-16 15H94" fill="none" stroke="#2E4B3C" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Chenille</h3>
+            <p>Fuzzy, bold, unmistakably varsity. Letterman jackets, school spirit, retro merch.</p>
+          </div>
+        </article>
+        <article class="fan-card" data-rot="13" style="--rot:13deg; --z:5">
+          <div class="fan-card__inner fan-card__inner--leather">
+            <div class="sticker-art" aria-hidden="true">
+              <svg viewBox="0 0 200 150">
+                <rect x="22" y="28" width="156" height="96" rx="10" fill="#fff"/>
+                <rect x="32" y="38" width="136" height="76" rx="6" fill="#C4A882"/>
+                <rect x="44" y="50" width="112" height="52" rx="3" fill="none" stroke="#6B4E32" stroke-width="1.5"/>
+                <circle cx="48" cy="54" r="2" fill="#6B4E32"/>
+                <circle cx="152" cy="54" r="2" fill="#6B4E32"/>
+                <circle cx="48" cy="98" r="2" fill="#6B4E32"/>
+                <circle cx="152" cy="98" r="2" fill="#6B4E32"/>
+                <path d="M70 76h60" stroke="#6B4E32" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Leather</h3>
+            <p>Debossed or printed, leather or faux leather, for a premium feel. Denim, hats, bags, high-end labels.</p>
+          </div>
+        </article>
+      </div>
+      <div class="wrap types__meta">
+        <p><strong>Backings</strong> iron-on · sew-on · hook-and-loop (Velcro) · adhesive · pin</p>
+        <p><strong>Borders</strong> merrowed · hot-cut · laser-cut</p>
+        <p class="types__advice"><a href="#quote">Not sure? Get advice with your quote.</a></p>
+      </div>
+    </section>
+
+    <section class="why" id="why" data-header="dark">
+      <div class="why__grid wrap-wide">
+        <div class="why__copy">
+          <p class="kicker">Why Patchsmith</p>
+          <h2>Five reasons to skip the <em>middleman.</em></h2>
+          <p>You deal with the people who make your patches, not a middleman with a markup and a mood.</p>
+        </div>
+        <div class="why__stage">
+          <canvas class="why__ring" id="why-ring" aria-hidden="true"></canvas>
+          <div class="stack-stage" id="stack">
+            <article class="glass-card is-active">
+              <span>01</span>
+              <h3>Talk directly to our production team on WhatsApp</h3>
+              <p>No chatbot maze. The thread goes to the workshop that stitches the order.</p>
+            </article>
+            <article class="glass-card">
+              <span>02</span>
+              <h3>Free digital mockup with every quote</h3>
+              <p>You see it before we stitch it. Nothing gets made until you approve it.</p>
+            </article>
+            <article class="glass-card">
+              <span>03</span>
+              <h3>Five patch types, one supplier</h3>
+              <p>Embroidered for classic, woven for detail, PVC for tough, chenille for varsity, leather for premium.</p>
+            </article>
+            <article class="glass-card">
+              <span>04</span>
+              <h3>Ships worldwide by tracked express courier</h3>
+              <p>US, UK, Europe, the Middle East and Africa. Anywhere else, just ask. Lead times: TBC.</p>
+            </article>
+            <article class="glass-card">
+              <span>05</span>
+              <h3>Your artwork stays with your order</h3>
+              <p>Only the team making your order sees it. We never reuse or share your designs.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="process" id="process" data-header="light">
+      <div class="wrap">
+        <p class="kicker">How it works</p>
+        <h2>Five steps. No <em>guesswork.</em></h2>
+        <ol class="timeline">
+          <li>
+            <span>01</span>
+            <div>
+              <h3>Share artwork</h3>
+              <p>Logo, sketch or napkin doodle. Add the size, quantity, patch type and backing if you know them.</p>
+            </div>
+          </li>
+          <li>
+            <span>02</span>
+            <div>
+              <h3>Free mockup</h3>
+              <p>Free digital mockup with every quote, plus a real number. You see it before we stitch it. Turnaround: TBC.</p>
+            </div>
+          </li>
+          <li>
+            <span>03</span>
+            <div>
+              <h3>Approve</h3>
+              <p>Changes are free until you say yes. Nothing is made until you approve it. Sample option: TBC.</p>
+            </div>
+          </li>
+          <li>
+            <span>04</span>
+            <div>
+              <h3>Stitch</h3>
+              <p>We make the approved design in Pakistan. Production time: TBC.</p>
+            </div>
+          </li>
+          <li>
+            <span>05</span>
+            <div>
+              <h3>Ship worldwide</h3>
+              <p>Ships worldwide by tracked express courier. You get tracking with every order. Shipping times: TBC.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery" data-header="light">
+      <div class="wrap gallery__head">
+        <div>
+          <p class="kicker">Gallery</p>
+          <h2>Thread, meet <em>results.</em></h2>
+        </div>
+        <p class="lede">Concept designs for shape and finish. Not client work. Real production photos will replace these.</p>
+      </div>
+      <div class="wrap filters" role="toolbar" aria-label="Filter concepts">
+        <button type="button" class="is-on" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" data-filter="embroidered" aria-pressed="false">Embroidered</button>
+        <button type="button" data-filter="woven" aria-pressed="false">Woven</button>
+        <button type="button" data-filter="pvc" aria-pressed="false">PVC</button>
+        <button type="button" data-filter="chenille" aria-pressed="false">Chenille</button>
+        <button type="button" data-filter="leather" aria-pressed="false">Leather</button>
+      </div>
+      <div class="collage" id="collage">
+        <figure class="sticker" data-kind="embroidered" style="--x:4%; --y:6%; --r:-8deg">
+          <div class="sticker__body">
+            <svg viewBox="0 0 220 160" aria-hidden="true">
+              <rect x="12" y="18" width="196" height="124" rx="32" fill="#fff"/>
+              <rect x="26" y="32" width="168" height="96" rx="22" fill="#2E4B3C"/>
+              <rect x="40" y="46" width="140" height="68" rx="14" fill="none" stroke="#F4EFE6" stroke-width="2.4" stroke-dasharray="4 6"/>
+              <circle cx="110" cy="80" r="16" fill="none" stroke="#E07A2E" stroke-width="4"/>
+              <path d="M110 68v24M98 80h24" stroke="#E07A2E" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+            <figcaption><b>Concept</b> Embroidered</figcaption>
+          </div>
+        </figure>
+        <figure class="sticker" data-kind="woven" style="--x:30%; --y:18%; --r:6deg">
+          <div class="sticker__body">
+            <svg viewBox="0 0 240 120" aria-hidden="true">
+              <rect x="8" y="16" width="224" height="88" rx="6" fill="#fff"/>
+              <rect x="18" y="26" width="204" height="68" fill="#E6ECF0"/>
+              <path d="M22 40h196M22 52h196M22 64h196M22 76h196" stroke="#2E4B3C" stroke-opacity=".4" stroke-width="1"/>
+              <path d="M60 30v60M100 30v60M140 30v60M180 30v60" stroke="#2E4B3C" stroke-opacity=".25" stroke-width="1"/>
+              <text x="120" y="68" text-anchor="middle" font-family="Manrope, sans-serif" font-size="13" fill="#2E4B3C" letter-spacing="3">WOVEN</text>
+            </svg>
+            <figcaption><b>Concept</b> Woven</figcaption>
+          </div>
+        </figure>
+        <figure class="sticker" data-kind="pvc" style="--x:58%; --y:4%; --r:-4deg">
+          <div class="sticker__body">
+            <svg viewBox="0 0 180 190" aria-hidden="true">
+              <path d="M90 12l68 26v48c0 40-28 64-68 78-40-14-68-38-68-78V38z" fill="#fff"/>
+              <path d="M90 28l52 18v38c0 30-20 50-52 62-32-12-52-32-52-62V46z" fill="#1A1A1A"/>
+              <path d="M90 28l52 18v12L90 74 38 58V46z" fill="#3d3d3d"/>
+              <circle cx="90" cy="104" r="14" fill="none" stroke="#E07A2E" stroke-width="4"/>
+            </svg>
+            <figcaption><b>Concept</b> PVC</figcaption>
+          </div>
+        </figure>
+        <figure class="sticker" data-kind="chenille" style="--x:18%; --y:52%; --r:7deg">
+          <div class="sticker__body">
+            <svg viewBox="0 0 180 180" aria-hidden="true">
+              <circle cx="90" cy="90" r="78" fill="#fff"/>
+              <circle cx="90" cy="90" r="64" fill="#E07A2E"/>
+              <circle cx="90" cy="90" r="48" fill="none" stroke="#2E4B3C" stroke-width="10" stroke-dasharray="2 5"/>
+              <text x="90" y="106" text-anchor="middle" font-family="Archivo Black, sans-serif" font-size="52" fill="#2E4B3C">P</text>
+            </svg>
+            <figcaption><b>Concept</b> Chenille</figcaption>
+          </div>
+        </figure>
+        <figure class="sticker" data-kind="leather" style="--x:48%; --y:48%; --r:-9deg">
+          <div class="sticker__body">
+            <svg viewBox="0 0 210 140" aria-hidden="true">
+              <rect x="10" y="14" width="190" height="112" rx="12" fill="#fff"/>
+              <rect x="22" y="26" width="166" height="88" rx="6" fill="#C9A36A"/>
+              <rect x="36" y="40" width="138" height="60" fill="none" stroke="#5C4128" stroke-width="1.6"/>
+              <circle cx="40" cy="44" r="2.2" fill="#5C4128"/><circle cx="170" cy="44" r="2.2" fill="#5C4128"/>
+              <circle cx="40" cy="96" r="2.2" fill="#5C4128"/><circle cx="170" cy="96" r="2.2" fill="#5C4128"/>
+              <path d="M70 70h70" stroke="#5C4128" stroke-width="2"/>
+            </svg>
+            <figcaption><b>Concept</b> Leather</figcaption>
+          </div>
+        </figure>
+        <figure class="sticker" data-kind="embroidered" style="--x:72%; --y:42%; --r:5deg">
+          <div class="sticker__body">
+            <svg viewBox="0 0 190 170" aria-hidden="true">
+              <ellipse cx="95" cy="86" rx="80" ry="68" fill="#fff"/>
+              <ellipse cx="95" cy="86" rx="66" ry="54" fill="#1E3A2C"/>
+              <ellipse cx="95" cy="86" rx="50" ry="40" fill="none" stroke="#F4EFE6" stroke-width="2" stroke-dasharray="3 5"/>
+              <path d="M70 86c10-20 40-20 50 0-10 18-40 18-50 0z" fill="none" stroke="#E07A2E" stroke-width="3"/>
+            </svg>
+            <figcaption><b>Concept</b> Embroidered</figcaption>
+          </div>
+        </figure>
+      </div>
+      <div class="wrap gallery__cta">
+        <a class="btn btn-forest" href="#quote">Get a quote</a>
+      </div>
+    </section>
+
+    <section class="faq" id="faq" data-header="light">
+      <div class="wrap faq__grid">
+        <div>
+          <p class="kicker">FAQ</p>
+          <h2>Questions, <em>answered.</em></h2>
+          <p class="lede">Where a number is still open, it says TBC. We won't invent one.</p>
+        </div>
+        <div class="faq__list">
+          <details>
+            <summary>What's your minimum order?</summary>
+            <div class="faq__a"><p>TBC. Ask on your quote and we'll tell you the minimum for that patch.</p></div>
+          </details>
+          <details>
+            <summary>How long does it take?</summary>
+            <div class="faq__a"><p>Mockups in TBC. Production and shipping in TBC. You'll get the real timing with the quote.</p></div>
+          </details>
+          <details>
+            <summary>Do you ship to my country?</summary>
+            <div class="faq__a"><p>Ships worldwide by tracked express courier. We ship to the US, UK, Europe, the Middle East and Africa. Anywhere else, just ask.</p></div>
+          </details>
+          <details>
+            <summary>What file should I send?</summary>
+            <div class="faq__a"><p>Vector (AI, EPS, PDF, SVG) is ideal. A clear PNG or JPG works too, and we'll tidy it up.</p></div>
+          </details>
+          <details>
+            <summary>Can I see it before you make it?</summary>
+            <div class="faq__a"><p>Yes. Free digital mockup with every quote. Nothing gets made until you approve it.</p></div>
+          </details>
+          <details>
+            <summary>Which patch type should I choose?</summary>
+            <div class="faq__a"><p>See <a href="#types">patch types</a>, or send us your design and what it's going on. We'll recommend one.</p></div>
+          </details>
+          <details>
+            <summary>Can you match my brand colours?</summary>
+            <div class="faq__a"><p>Yes. Send Pantone codes if you have them.</p></div>
+          </details>
+          <details>
+            <summary>How do I pay?</summary>
+            <div class="faq__a"><p>Payment methods: TBC. They're confirmed in writing with the order.</p></div>
+          </details>
+          <details>
+            <summary>Do you do samples?</summary>
+            <div class="faq__a"><p>TBC. Ask when you request the quote.</p></div>
+          </details>
+          <details>
+            <summary>Who sees my artwork?</summary>
+            <div class="faq__a"><p>Only the team making your order. We never reuse or share your designs.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote" id="quote" data-header="light">
+      <div class="wrap quote__grid">
+        <div class="quote__pitch">
+          <p class="kicker">Start your brief</p>
+          <h2>Fair prices. Quoted <em>fast.</em></h2>
+          <p>Your price depends on size, patch type, number of colours, backing and quantity. Send the details and you'll get a real number, not a riddle.</p>
+          <ul class="checks">
+            <li>Free digital mockup with every quote</li>
+            <li>No obligation</li>
+            <li>Minimum order quantity: TBC</li>
+            <li>Price tiers: TBC</li>
+            <li>Bulk discounts: TBC</li>
+          </ul>
+          <p class="quote__aside">Talk directly to our production team on WhatsApp. The button is ready; the number is still to be connected.</p>
+        </div>
+        <form class="glass-form" id="quote-form" novalidate>
+          <div class="fields">
+            <label>Name
+              <input name="name" autocomplete="name" required>
+            </label>
+            <label>Company
+              <input name="company" autocomplete="organization">
+            </label>
+            <label>Email
+              <input name="email" type="email" autocomplete="email" required>
+            </label>
+            <label>Country
+              <input name="country" autocomplete="country-name">
+            </label>
+            <label>Patch type
+              <select name="type">
+                <option>Embroidered</option>
+                <option>Woven</option>
+                <option>PVC</option>
+                <option>Chenille</option>
+                <option>Leather</option>
+                <option>Not sure</option>
+              </select>
+            </label>
+            <label>Quantity
+              <input name="quantity" inputmode="numeric" placeholder="Get a quote">
+            </label>
+            <label>Size
+              <input name="size" placeholder="in or cm">
+            </label>
+            <label>Deadline
+              <input name="deadline" type="date">
+            </label>
+            <label class="span-2 file-field">Artwork
+              <input name="artwork" type="file" accept=".ai,.eps,.pdf,.svg,.png,.jpg,.jpeg,.webp,image/*,.pdf">
+              <span class="file-name" data-file-name>Vector or a clear PNG / JPG</span>
+            </label>
+            <label class="span-2">Notes
+              <textarea name="notes" rows="4" placeholder="Backing, colours, Pantone codes, what it's going on."></textarea>
+            </label>
+          </div>
+          <button class="btn btn-forest" type="submit">Get my quote</button>
+          <p class="form-note">Free digital mockup with every quote. No obligation.</p>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-hero" data-header="dark">
+      <p class="kicker">Next</p>
+      <p class="footer-display">Got a logo?<br>We've got <em>thread.</em></p>
+      <a class="btn btn-metal" href="#quote">Get a quote</a>
+    </div>
+    <div class="footer-sheet" data-header="light">
+      <div class="footer-card">
+        <img src="assets/logo.png" alt="Patchsmith" width="800" height="800">
+        <nav aria-label="Footer">
+          <a href="#types">Patch types</a>
+          <a href="#process">How it works</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#faq">FAQ</a>
+          <a href="#quote">Get a quote</a>
+        </nav>
+        <p>Custom patches, made in Pakistan, shipped worldwide.</p>
+        <p>Ships worldwide by tracked express courier.</p>
+        <p class="footer-legal">© 2026 Patchsmith · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- TODO: replace href with the real WhatsApp link once the number is confirmed.
+       Example: https://wa.me/NUMBER?text=Hi%20Patchsmith%2C%20I%27d%20like%20a%20quote%20for%20custom%20patches. -->
+  <a class="wa" href="#quote" aria-label="Talk directly to our production team on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path fill="currentColor" d="M12.04 2C6.58 2 2.15 6.4 2.15 11.83c0 1.74.46 3.44 1.34 4.94L2 22l5.39-1.4a10 10 0 0 0 4.65 1.18h.01c5.46 0 9.89-4.4 9.89-9.83C21.94 6.4 17.5 2 12.04 2zm5.76 14.02c-.24.68-1.4 1.3-1.94 1.38-.5.08-1.12.11-1.81-.11-.42-.14-.95-.31-1.64-.6-2.88-1.24-4.76-4.14-4.9-4.33-.14-.2-1.16-1.54-1.16-2.94s.73-2.08 1-2.36c.24-.28.64-.41 1.02-.41.12 0 .23 0 .33.01.3.01.44.03.64.49.24.58.82 2 .89 2.15.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.16-.3.37-.42.49-.14.14-.28.29-.12.56.16.28.72 1.18 1.54 1.91 1.06.94 1.95 1.23 2.23 1.37.28.14.44.12.6-.07.16-.19.7-.81.88-1.09.19-.28.37-.23.62-.14.26.09 1.62.76 1.9.9.28.14.46.21.53.33.07.12.07.68-.17 1.36z"/>
+    </svg>
+  </a>
+  <button class="to-top" type="button" aria-label="Back to top" hidden>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 14l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
