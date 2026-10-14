@@ -31,6 +31,12 @@
   function setHeaderTheme(theme) {
     header.classList.toggle("is-dark", theme !== "light");
     header.classList.toggle("is-light", theme === "light");
+    var brandLogo = document.getElementById("brand-logo");
+    if (!brandLogo) return;
+    var src = theme === "light"
+      ? "assets/brand/logo-primary-light.svg"
+      : "assets/brand/logo-primary-dark.svg";
+    if (brandLogo.getAttribute("src") !== src) brandLogo.setAttribute("src", src);
   }
 
   function onScroll() {
@@ -167,11 +173,12 @@
 
   function splitChars(el) {
     var text = el.textContent;
+    var stroke = el.hasAttribute("data-stroke");
     el.textContent = "";
     var frag = document.createDocumentFragment();
     Array.from(text).forEach(function (ch) {
       var s = document.createElement("span");
-      s.className = "char";
+      s.className = stroke ? "char is-stroke" : "char";
       s.textContent = ch === " " ? "\u00A0" : ch;
       frag.appendChild(s);
     });
@@ -266,11 +273,33 @@
 
     gsap.utils.toArray(".timeline li").forEach(function (item) {
       gsap.from(item, {
-        y: 28,
+        y: 40,
         opacity: 0,
-        duration: 0.6,
-        ease: "power2.out",
+        duration: 0.7,
+        ease: "power3.out",
         scrollTrigger: { trigger: item, start: "top 88%" }
+      });
+    });
+
+    gsap.utils.toArray("main section:not(.assemble) h2, .footer-display").forEach(function (heading) {
+      gsap.from(heading, {
+        y: 42,
+        opacity: 0,
+        duration: 0.85,
+        ease: "power3.out",
+        scrollTrigger: { trigger: heading, start: "top 90%" }
+      });
+    });
+
+    gsap.utils.toArray(".sticker").forEach(function (fig) {
+      gsap.from(fig, {
+        y: 50,
+        scale: 0.94,
+        opacity: 0,
+        duration: 0.8,
+        ease: "power2.out",
+        transformOrigin: "50% 60%",
+        scrollTrigger: { trigger: fig, start: "top 92%" }
       });
     });
 
