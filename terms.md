@@ -1,6 +1,6 @@
 # Terms of Service
 **Patchsmith** · patchsmith.co · Last updated: 2026-10-12
-Pricing and minimums stay TBC until they are set.
+Pricing depends on patch type, size and quantity. Send your design for a quote.
 
 ## Quotes and orders
 - Website quotes are invitations to treat, not binding offers.
