@@ -128,17 +128,24 @@
     });
   });
 
-  document.querySelectorAll(".filters button").forEach(function (btn) {
-    btn.addEventListener("click", function () {
-      var kind = btn.getAttribute("data-filter");
-      document.querySelectorAll(".filters button").forEach(function (b) {
-        var on = b === btn;
-        b.classList.toggle("is-on", on);
-        b.setAttribute("aria-pressed", on ? "true" : "false");
-      });
-      document.querySelectorAll(".sticker").forEach(function (s) {
-        var show = kind === "all" || s.getAttribute("data-kind") === kind;
-        s.classList.toggle("is-out", !show);
+  document.querySelectorAll(".filters").forEach(function (bar) {
+    var section = bar.closest("section") || document;
+    bar.querySelectorAll("button").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var kind = btn.getAttribute("data-filter");
+        bar.querySelectorAll("button").forEach(function (b) {
+          var on = b === btn;
+          b.classList.toggle("is-on", on);
+          b.setAttribute("aria-pressed", on ? "true" : "false");
+        });
+        section.querySelectorAll(".sticker").forEach(function (s) {
+          var show = kind === "all" || s.getAttribute("data-kind") === kind;
+          s.classList.toggle("is-out", !show);
+        });
+        section.querySelectorAll(".concept-group").forEach(function (g) {
+          var show = kind === "all" || g.getAttribute("data-group") === kind;
+          g.classList.toggle("is-out", !show);
+        });
       });
     });
   });
