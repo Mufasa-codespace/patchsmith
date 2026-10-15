@@ -112,6 +112,10 @@ h1, h2, h3, .display {
   letter-spacing: -0.045em;
   line-height: 0.92;
   margin: 0;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+  -webkit-hyphens: none;
 }
 
 h1 em, h2 em, .footer-display em {
@@ -365,7 +369,7 @@ body.nav-open .site-header {
 .hero__fallback img { width: 100%; height: auto; display: block; }
 body.has-webgl .hero__fallback { opacity: 0; visibility: hidden; position: absolute; }
 .hero__content { position: relative; z-index: 2; max-width: min(920px, 100%); }
-.hero h1 { font-size: clamp(2.55rem, 6vw, 5.35rem); }
+.hero h1 { font-size: clamp(1.5rem, 7.6vw, 5.35rem); }
 .hero__pride {
   margin: 0.85rem 0 0;
   font-family: var(--display);
@@ -475,8 +479,17 @@ body.has-webgl .hero__fallback { opacity: 0; visibility: hidden; position: absol
   overflow: hidden;
 }
 .assemble__inner { position: relative; width: min(1100px, 100%); text-align: center; }
-.assemble__title { font-size: clamp(2rem, 5.3vw, 5.05rem); }
+.assemble__title { font-size: clamp(1.4rem, 8.6vw, 5.05rem); }
 .assemble__row { display: block; }
+.assemble [data-split],
+.assemble [data-stroke] {
+  display: inline-block;
+  white-space: nowrap;
+  word-break: normal;
+  overflow-wrap: normal;
+  hyphens: none;
+  -webkit-hyphens: none;
+}
 .assemble .char { display: inline-block; will-change: transform; }
 .char.is-stroke {
   color: transparent;
@@ -511,7 +524,7 @@ body.has-webgl .hero__fallback { opacity: 0; visibility: hidden; position: absol
   display: grid;
   gap: 2rem;
 }
-.audience h2 { font-size: clamp(2.4rem, 5vw, 4.6rem); max-width: 12ch; }
+.audience h2 { font-size: clamp(1.7rem, 8.8vw, 4.6rem); max-width: 12ch; }
 .audience__list { list-style: none; margin: 0; padding: 0; }
 .audience__list li {
   display: grid;
@@ -536,7 +549,7 @@ body.has-webgl .hero__fallback { opacity: 0; visibility: hidden; position: absol
 
 /* Types / fan */
 .types { background: var(--paper); padding: clamp(4.5rem, 8vw, 7rem) 0 4rem; }
-.types__head h2 { font-size: clamp(2.8rem, 6vw, 5.4rem); }
+.types__head h2 { font-size: clamp(1.85rem, 9vw, 5.4rem); }
 .types__head .lede { margin-top: 1rem; }
 .fan {
   margin-top: 2.5rem;
@@ -617,7 +630,7 @@ body.has-webgl .hero__fallback { opacity: 0; visibility: hidden; position: absol
 
 /* Guide + more products */
 .guide { background: var(--cream); padding: clamp(4.5rem, 9vw, 7.5rem) 0; }
-.guide h2 { font-size: clamp(2.6rem, 6vw, 5rem); margin-bottom: 0.8rem; }
+.guide h2 { font-size: clamp(1.8rem, 8.8vw, 5rem); margin-bottom: 0.8rem; }
 .guide__list { list-style: none; margin: 2rem 0 0; padding: 0; }
 .guide__list li {
   display: grid;
@@ -638,7 +651,7 @@ body.has-webgl .hero__fallback { opacity: 0; visibility: hidden; position: absol
 .guide__list p { margin: 0 0 0.55rem; max-width: 42rem; color: #3c3834; }
 .guide__list p:last-child { margin-bottom: 0; }
 .more { background: var(--paper); padding: clamp(4.5rem, 9vw, 7.5rem) 0; }
-.more h2 { font-size: clamp(2.6rem, 6vw, 5rem); }
+.more h2 { font-size: clamp(1.8rem, 8.8vw, 5rem); }
 .more .lede { margin-top: 0.8rem; }
 .more__grid {
   display: grid;
@@ -675,7 +688,7 @@ body.has-webgl .hero__fallback { opacity: 0; visibility: hidden; position: absol
 
 .story { background: var(--paper); padding: clamp(4.5rem, 9vw, 7.5rem) 0; }
 .story__grid { display: grid; gap: 1.4rem; }
-.story h2 { font-size: clamp(2.6rem, 6vw, 5rem); }
+.story h2 { font-size: clamp(1.8rem, 8.8vw, 5rem); }
 .story__copy p { margin: 0 0 0.95rem; max-width: 40rem; color: #3c3834; }
 .story__copy p:last-child { margin-bottom: 0; }
 .vision {
@@ -685,7 +698,7 @@ body.has-webgl .hero__fallback { opacity: 0; visibility: hidden; position: absol
   color: var(--cream);
   padding: clamp(4.5rem, 9vw, 7rem) 0;
 }
-.vision h2 { font-size: clamp(2.6rem, 6vw, 5rem); color: #fff; }
+.vision h2 { font-size: clamp(1.8rem, 8.8vw, 5rem); color: #fff; }
 .vision p { max-width: 40rem; color: rgba(247, 247, 242, 0.84); margin: 0.85rem 0 0; }
 .vision__statement { font-size: 1.12rem; }
 .values {
@@ -744,7 +757,7 @@ body.has-webgl .hero__fallback { opacity: 0; visibility: hidden; position: absol
 
 /* Concept designs */
 .samples { background: var(--cream); padding: clamp(4.5rem, 8vw, 7rem) 0; }
-.samples h2 { font-size: clamp(2.4rem, 5.5vw, 4.6rem); }
+.samples h2 { font-size: clamp(1.75rem, 8.2vw, 4.6rem); }
 .samples .lede { margin-top: 0.8rem; }
 .concept-groups { display: grid; gap: 1.8rem; margin-top: 0.4rem; }
 .concept-group h3 {
@@ -795,7 +808,7 @@ body.has-webgl .hero__fallback { opacity: 0; visibility: hidden; position: absol
   padding: calc(var(--header) + 2rem) 0 3rem;
 }
 .why__grid { display: grid; gap: 2rem; align-items: center; }
-.why h2 { font-size: clamp(2.5rem, 5vw, 4.4rem); max-width: 10ch; }
+.why h2 { font-size: clamp(1.75rem, 8.4vw, 4.4rem); max-width: 10ch; }
 .why__copy p:last-child { color: rgba(247, 247, 242, 0.74); max-width: 34rem; }
 .why__stage { position: relative; min-height: 420px; display: grid; place-items: center; }
 .why__ring {
@@ -831,7 +844,7 @@ body.has-webgl .hero__fallback { opacity: 0; visibility: hidden; position: absol
 
 /* Process */
 .process { background: var(--cream); padding: clamp(4.5rem, 9vw, 8rem) 0; }
-.process h2 { font-size: clamp(2.6rem, 6vw, 5rem); margin-bottom: 2rem; }
+.process h2 { font-size: clamp(1.8rem, 8.6vw, 5rem); margin-bottom: 2rem; }
 .timeline { list-style: none; margin: 0; padding: 0; }
 .timeline li {
   display: grid;
@@ -861,7 +874,7 @@ body.has-webgl .hero__fallback { opacity: 0; visibility: hidden; position: absol
   gap: 1rem;
   align-items: end;
 }
-.gallery h2 { font-size: clamp(2.6rem, 6vw, 5rem); }
+.gallery h2 { font-size: clamp(1.8rem, 8.8vw, 5rem); }
 .filters { display: flex; flex-wrap: wrap; gap: 0.45rem; margin: 1.4rem auto; }
 .filters button {
   border: 1px solid rgba(46, 75, 60, 0.25);
@@ -915,7 +928,7 @@ body.has-webgl .hero__fallback { opacity: 0; visibility: hidden; position: absol
 /* FAQ */
 .faq { background: var(--cream); padding: clamp(4rem, 8vw, 7rem) 0; }
 .faq__grid { display: grid; gap: 2rem; }
-.faq h2 { font-size: clamp(2.6rem, 5vw, 4.6rem); }
+.faq h2 { font-size: clamp(1.8rem, 8.4vw, 4.6rem); }
 .faq__list { border-bottom: 1px solid var(--line); }
 .faq details { border-top: 1px solid var(--line); }
 .faq summary {
@@ -977,7 +990,7 @@ body.has-webgl .hero__fallback { opacity: 0; visibility: hidden; position: absol
   gap: 2rem;
   align-items: start;
 }
-.quote h2 { font-size: clamp(2.6rem, 5.5vw, 4.8rem); max-width: 10ch; }
+.quote h2 { font-size: clamp(1.8rem, 8.6vw, 4.8rem); max-width: 10ch; }
 .quote__pitch > p { color: #3c3834; max-width: 36rem; }
 .checks { list-style: none; padding: 0; margin: 1.2rem 0; display: grid; gap: 0.55rem; }
 .checks li {
@@ -1057,10 +1070,14 @@ body.has-webgl .hero__fallback { opacity: 0; visibility: hidden; position: absol
 }
 .footer-display {
   font-family: var(--display);
-  font-size: clamp(3rem, 8vw, 7rem);
+  font-size: clamp(1.65rem, 11vw, 7rem);
   letter-spacing: -0.05em;
   line-height: 0.9;
   margin: 0 0 1.4rem;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+  -webkit-hyphens: none;
 }
 .footer-sheet { padding: 0 0.8rem 0.6rem; }
 .footer-card {
@@ -1271,8 +1288,6 @@ body.has-webgl .hero__fallback { opacity: 0; visibility: hidden; position: absol
 }
 
 @media (max-width: 560px) {
-  .hero h1 { font-size: clamp(2.35rem, 12vw, 3.2rem); }
-  .assemble__title { font-size: clamp(1.85rem, 9vw, 2.6rem); }
   .collage { grid-template-columns: 1fr 1fr; }
   .brand { width: 136px; }
   :root { --header: 84px; }
